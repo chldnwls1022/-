@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shooting Game</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+    }
+    #gameCanvas {
+      border: 1px solid #fff;
+    }
+    #title {
+      position: absolute;
+      font-size: 48px;
+      color: purple;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    #score, #cooldown, #gameOve  r {
+      position: absolute;
+      font-size: 20px;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    #score {
+      top: 20px;
+    }
+    #cooldown {
+      top: 50px;
+    }
+    #gameOver {
+      display: none;
+      top: 100px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+<div id="title">보라색집</div>
+<canvas id="gameCanvas" width="800" height="600"></canvas>
+<div id="score">Score: 0</div>
+<div id="cooldown">Laser Cooldown: 0s</div>
+<div id="gameOver">Game Over! Click to Restart</div>
+<script src="script.js"></script>
+</body>
+</html>
